@@ -15,6 +15,7 @@ function changeLetter() {
 function incrementScore(){
     score++;
     document.getElementById("head3").innerHTML = score;
+    changeLetter();
 }
 
 // Load the image model and setup the webcam
@@ -117,7 +118,6 @@ async function init() {
             // alert('Oh yeah!');
             // stop(video);
             incrementScore();
-            changeLetter();
             // checkBox.checked = false;
             // return;
         }
